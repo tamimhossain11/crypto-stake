@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Button, Img, Line, List, Navbar, Text } from "components";
+import { Img, Line,  Navbar, Text } from "components";
 import { Ten } from "components/MultipleWinnerResult/ten";
 import { Thousand } from "components/MultipleWinnerResult/thousand";
 import { Hundred } from "components/MultipleWinnerResult/hundred";
@@ -120,7 +120,7 @@ const ResultsPagePage = () => {
         <div className="absolute bg-deep_purple-500_26 border-[3px] border-deep_purple-500 border-solid bottom-[4%] flex flex-col font-josefinsans md:gap-10 gap-[66px] inset-x-[0] items-center justify-start max-w-[1620px] mx-auto p-14 md:px-5 rounded-[20px] w-full">
           <div className="bg-white-A700_0c flex p-1.5 relative rounded-[13px] w-[369px] h-[66px]">
             
-            <div className="flex flex-row items-center justify-between  ml-[40px] my-auto w-[280px] z-[1]">
+            <div className="flex flex-row items-center justify-between  ml-[37px] my-auto w-[280px] z-[1]">
             <button
           className="tab-button"
           style={{
