@@ -1,13 +1,10 @@
-import { useState, useRef } from "react";
+import { useState} from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button, Img, Line, List, Navbar, Text } from "components";
 import { Cards, } from "components/Cards";
 import { Exclusive } from "components/TierCards/exclusive";
 import { Standard } from "components/TierCards/standard";
 import { Premium } from "components/TierCards/premium";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSortDown } from '@fortawesome/free-solid-svg-icons';
-import Select from 'react-select';
 
 
 
@@ -56,7 +53,7 @@ const AboutPageThreePage = () => {
       fontWeight: '700',
       fontSize: '22px',
       textAlign: 'center',
-      
+
     },
     arrowIcon: {
       fontSize: '18px', // Adjust the font size to make the arrow smaller
@@ -86,18 +83,20 @@ const AboutPageThreePage = () => {
       fontSize: '22px',
       fontWeight: '500',
       cursor: 'pointer',
-      marginTop:'10px',
-      marginLeft:'17px',
-      marginRight:'17px',
+      marginTop: '10px',
+      marginLeft: '17px',
+      marginRight: '17px',
       hover: {
         backgroundColor: '#8B5CF6',
-        color: 'white',},
-        transition: 'background-color 0.3s ease', // Add transition for hover effect
+        color: 'white',
+      },
+      transition: 'background-color 0.3s ease', // Add transition for hover effect
 
     },
     optionSelected: {
       backgroundColor: '#8b5cf6',
       fontWeight: 'bold',
+      borderRadius:'5px',
     },
   };
   return (
@@ -165,16 +164,24 @@ const AboutPageThreePage = () => {
                   </div>
                 </div>
               </div>
+              
+              <div className="absolute bg-black-900 bottom-[0] flex flex-col font-josefinsans inset-x-[0] items-end justify-end mb-[56%] mt-auto mx-auto md:pl-10 sm:pl-5 pl-[66px] py-[66px] w-full">
               <Img
-                className="h-[212px] mt-[300px] object-cover w-[15%] z-[1]"
+                className="h-[212px] mr-[90%] mt-[-5%]  w-[15%]"
+                style={{
+                   
+                  }}
                 src="images/img_group32267.png"
                 alt="group32267"
               //have to fix
               />
-              <div className="absolute bg-black-900 bottom-[0] flex flex-col font-josefinsans inset-x-[0] items-end justify-end mb-[57%] mt-auto mx-auto md:pl-10 sm:pl-5 pl-[66px] py-[66px] w-full">
                 <div className="flex flex-col md:gap-10 gap-[99px] items-start justify-start w-[96%] md:w-full">
+                
                   <div className="flex md:flex-col flex-row md:gap-10 items-center justify-between w-[92%] md:w-full ">
-                    <div className="flex flex-col gap-[21px] items-center justify-start mr-[200px]">
+                  
+                    <div className="flex flex-col gap-[21px] items-center justify-start mt-[-100px] mr-[200px]">
+                    
+                   
                       <Text
                         className="text-5xl sm:text-[38px] md:text-[44px] text-white-A700 tracking-[-0.96px]"
                         size="txtJosefinSansRomanBold48"
@@ -182,7 +189,7 @@ const AboutPageThreePage = () => {
                         Welcome to CryptoStake Lottery!
                       </Text>
                       <Text
-                        className="leading-[30.00px] text-[22px] text-gray-500 sm:text-lg md:text-xl tracking-[-0.44px] w-full"
+                        className="leading-[30.00px] text-[22px] text-gray-500 sm:text-lg md:text-xl tracking-[-0.44px] w-[729px]"
                         size="txtJosefinSansRomanRegular22Gray500"
                       >
                         <>
@@ -196,8 +203,10 @@ const AboutPageThreePage = () => {
                         </>
                       </Text>
                     </div>
+                    
+                    
                     <Img
-                      className="h-[573px] md:h-auto object-cover mt-10"
+                      className="h-[573px] md:h-auto object-cover mt-[-50px]"
                       src="images/img_image1.png"
                       alt="imageOne"
                     />
@@ -231,7 +240,7 @@ const AboutPageThreePage = () => {
                       </Text>
                     </div>
                     <Img
-                      className="md:flex-1 h-[356px] sm:h-auto ml-5 md:ml-[0] object-cover w-[8%] md:w-full"
+                      className="md:flex-1 h-[356px] sm:h-auto ml-5 mt-[-200px] md:ml-[0] object-cover w-[8%] md:w-full"
                       src="images/img_rectangle39352.png"
                       alt="rectangle39352"
                     />
@@ -241,11 +250,11 @@ const AboutPageThreePage = () => {
             </div>
             <div className="font-josefinsans sm:h-[1072px] h-[1148px] md:h-[1565px] mt-[-76.56px] mx-auto w-full ">
               <Img
-                className="h-[1148px] r w-full"
+                className="h-[1248px] r w-full"
                 src="images/Aboutbox.png"
                 alt="bg2removebgprev"
               />
-              <div className="absolute flex flex-col h-[1400px] inset-[0] items-center justify-center mb-auto mt-[92%] mx-auto p-[118px] md:px-10 sm:px-5 w-full">
+              <div className="absolute flex flex-col h-[1400px] inset-[0] items-center justify-center mb-auto mt-[96%] mx-auto p-[118px] md:px-10 sm:px-5 w-full">
                 <div className="flex flex-col items-center justify-start w-[97%] md:w-full">
                   <div className="flex flex-col md:gap-10 gap-[60px] items-center justify-start mt-[-120px] w-full">
                     <div className="flex flex-col gap-[21px] items-center justify-start">
@@ -256,7 +265,7 @@ const AboutPageThreePage = () => {
                         How CryptoStake Works?
                       </Text>
                       <Text
-                        className="leading-[30.00px] text-[22px] text-center text-gray-500 sm:text-lg md:text-xl tracking-[-0.44px] w-full"
+                        className="leading-[30.00px] text-[22px] text-center text-gray-500 sm:text-lg md:text-xl tracking-[-0.44px] w-[1045px]"
                         size="txtJosefinSansRomanRegular22Gray500"
                       >
                         <>
@@ -405,7 +414,7 @@ const AboutPageThreePage = () => {
               </div>
             </div>
           </div>
-          <div className="flex md:flex-col flex-row font-josefinsans md:gap-10 items-center justify-between max-w-[1620px] mt-[118px] mx-auto md:px-5 w-full">
+          <div className="flex md:flex-col flex-row font-josefinsans md:gap-10 items-center justify-between max-w-[1620px] mt-[218px] mx-auto md:px-5 w-full">
             <div className="flex flex-col gap-[21px] items-start justify-start">
               <Text
                 className="text-5xl sm:text-[38px] md:text-[44px] text-white-A700 tracking-[-0.96px]"
@@ -414,7 +423,7 @@ const AboutPageThreePage = () => {
                 Security and Transparency
               </Text>
               <Text
-                className="leading-[30.00px] text-[22px] text-gray-500 sm:text-lg md:text-xl tracking-[-0.44px] w-full"
+                className="leading-[30.00px] text-[22px] text-gray-500 sm:text-lg md:text-xl tracking-[-0.44px] w-[729px]"
                 size="txtJosefinSansRomanBold22"
               >
                 Your security is paramount to us. CryptoStake employs
@@ -431,7 +440,7 @@ const AboutPageThreePage = () => {
               alt="imageThree"
             />
           </div>
-          <div className="flex flex-col font-josefinsans items-center justify-start mt-[120px] mx-auto md:px-5 w-[1620px]">
+          <div className="flex flex-col font-josefinsans items-center justify-start mt-[160px] mx-auto md:px-5 w-[1620px]">
             <div className="flex flex-col gap-[49px] items-center justify-start w-full">
               <div className="flex sm:flex-col flex-row md:gap-10 items-center justify-between w-full">
                 <Text
@@ -441,35 +450,35 @@ const AboutPageThreePage = () => {
                   Explore Our Games and Pools
                 </Text>
                 <div style={selectStyle.container}>
-      <div
-        style={{
-          ...selectStyle.selectButton,
-          ...(isMenuOpen ? selectStyle.selectButtonOpen : {}),
-        }}
-        onClick={toggleMenu}
-      >
-        {selectedLabel} {isMenuOpen ? <span style={selectStyle.arrowIcon}>▲</span> : <span style={selectStyle.arrowIcon}>▼</span>}
-      </div>
-      {isMenuOpen && (
-        <div style={selectStyle.optionsContainer}>
-          {options.map((option) => (
-            <div
-              key={option.value}
-              style={{
-                ...selectStyle.option,
-                ...(selectedValue === option.value
-                  ? selectStyle.optionSelected
-                  : {}),
-              }}
-              onClick={() => handleOptionSelect(option)}
-              
-            >
-              {option.label}
-            </div>
-          ))}
-        </div>
-      )}
-    </div>
+                  <div
+                    style={{
+                      ...selectStyle.selectButton,
+                      ...(isMenuOpen ? selectStyle.selectButtonOpen : {}),
+                    }}
+                    onClick={toggleMenu}
+                  >
+                    {selectedLabel} {isMenuOpen ? <span style={selectStyle.arrowIcon}>▲</span> : <span style={selectStyle.arrowIcon}>▼</span>}
+                  </div>
+                  {isMenuOpen && (
+                    <div style={selectStyle.optionsContainer}>
+                      {options.map((option) => (
+                        <div
+                          key={option.value}
+                          style={{
+                            ...selectStyle.option,
+                            ...(selectedValue === option.value
+                              ? selectStyle.optionSelected
+                              : {}),
+                          }}
+                          onClick={() => handleOptionSelect(option)}
+
+                        >
+                          {option.label}
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
 
 
               </div>
